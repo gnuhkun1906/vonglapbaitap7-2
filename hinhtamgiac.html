@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // Hình tam giác 1:
+    // for (let i = 0; i < 5; i++) {
+    //     for (let j = 0; j <= i; j++) {
+    //         document.write('*')
+    //     }
+    //     document.write('<br>');
+    // }
+    //Hình tam giác 2
+    // for (let i = 4; i >=0 ; i--) {
+    //     for (let j = 0; j <=i ; j++) {
+    //         document.write('*');
+    //     }
+    //     document.write('<br>');
+    // }
+    // Hình tam giác 3:
+    // var N=+prompt('Nhập vào chiều cao của hình tam giác:  ' );
+    // N=parseInt(N);
+    // for (let i = 1; i <=N ; i++) {
+    //     for (let j = N; j >i; j--) {
+    //        document.write('&nbsp;&nbsp')
+    //     }
+    //     for (let k = 1; k <= i; k++) {
+    //         document.write('*')
+    //     }
+    //     document.write('<br>');
+    // }
+    //     Hình tam giác 4:
+    var N = +prompt('Nhập vào N');
+    N = parseInt(N);
+    for (let i = 1; i <= N; i++) {
+        for (let k = 1; k < i; k++) {
+            document.write('&nbsp;&nbsp')
+        }
+        for (let j = N; j >= i; j--) {
+            document.write('*')
+        }
+        document.write('<br>')
+    }
+
+</script>
+</body>
+</html>
